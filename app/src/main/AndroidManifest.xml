@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.travelbookingsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login1Activity" />
+        <activity android:name=".Login2Activity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".allbus" />
+        <activity android:name=".allhotels" />
+        <activity android:name=".allfights" />
+        <activity android:name=".reservation" />
+        <activity android:name=".customers" />
+        <activity android:name=".book_flight" />
+        <activity android:name=".book_bus" />
+        <activity android:name=".book_hotel" />
+        <activity android:name=".Delete" />
+        <activity android:name=".delete_flight" />
+        <activity android:name=".delete_bus" />
+        <activity android:name=".delete_hotel" />
+        <activity android:name=".insert_flight" />
+        <activity android:name=".update_flight" />
+        <activity android:name=".look_customer"></activity>
+    </application>
+
+</manifest>

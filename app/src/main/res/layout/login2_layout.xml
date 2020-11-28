@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login2_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <EditText
+        android:id="@+id/account_input"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入账号"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:ellipsize="end"
+
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/password_input"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="请输入密码"
+        android:layout_below="@id/account_input"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <Button
+        android:id="@+id/btn_enroll"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:layout_below="@id/password_input"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+
+

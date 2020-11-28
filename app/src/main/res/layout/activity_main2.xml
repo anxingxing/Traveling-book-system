@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/tv_data"
+            android:padding="80dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="旅行预订系统"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/travel"
+            />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="用户模式"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2d70f5"
+            />
+
+        <TextView
+            android:id="@+id/tv"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/btn_allfights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="查询全部航班"
+                android:layout_weight="1" />
+            <Button
+                android:id="@+id/btn_allbus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="查询全部大巴"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/btn_allhotels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_weight="1"
+                android:text="查询全部宾馆" />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+
+            style="@android:style/ButtonBar"
+
+            >
+            <Button
+                android:id="@+id/book_flight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:onClick="book_flight"
+                android:text="预定航班"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/book_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="预定大巴"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/book_hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:text="预定宾馆"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv0"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_2"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="管理员模式"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2d70f5"
+            />
+        <TextView
+            android:id="@+id/tv3"
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        >
+        <Button
+            android:id="@+id/btn_reservation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="查询预定记录"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_customers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="查询注册用户"
+            android:layout_weight="1"
+            />
+</LinearLayout>
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:onClick="onDelete"
+            android:text="管理员-增删改查" />
+
+
+
+    </LinearLayout>
+</ScrollView>
